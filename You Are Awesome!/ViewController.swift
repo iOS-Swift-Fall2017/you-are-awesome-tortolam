@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var awesomeLabel: UILabel!
+    
+    //This code executes when the view controller loads
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func messageButtonPressed(_ sender: UIButton) {
+        awesomeLabel.text = "You are AWESOME!"
+    }
+    
+    
 }
 
